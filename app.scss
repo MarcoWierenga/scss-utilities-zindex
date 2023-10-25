@@ -1,0 +1,10 @@
+$z-indexes: 10, 20, 30, 40, 50, 100, 800, 900, 1000, 1100, 1200;
+
+@each $z-index in $z-indexes {
+  .-z#{$z-index} {
+    z-index: $z-index;
+  }
+}
+
+.-zn1 { z-index: -1; }
+.-zn2 { z-index: -2; }
